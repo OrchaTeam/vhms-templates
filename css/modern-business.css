@@ -17,6 +17,10 @@ body {
 .navbar-fixed-top .navbar-brand {
     padding: 5px;
 }
+.img-index {
+	width: 275px;
+	height: 250px;
+}
 
 .img-portfolio {
     margin-bottom: 30px;
