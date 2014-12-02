@@ -18,9 +18,11 @@
     <link href="css/modern-business.css" rel="stylesheet">
 		<!-- Custom CSS -->
     <link href="css/component.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    <link href="css/slider.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src="js/modernizr.custom.js"></script>
+		<script src="js/modernizr.custom.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -146,8 +148,35 @@
         <div class="row">
             <!-- Sidebar Column -->
             <div class="col-md-3">
-                <div class="list-group">
-                    <a href="index.html" class="list-group-item">Home</a>
+						<ul class="list-group">
+										<li class="list-group-item">
+											<h3 data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><a class="">Категории</a></h3>
+											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+												<ul class="list-group">
+													<li class="list-group-item">
+														<span class="badge">184</span>
+														Одежда
+													</li>
+													<li class="list-group-item active">
+														<span class="badge">134</span>
+														Украшения
+													</li>
+													<li class="list-group-item">
+														<span class="badge">34</span>
+														Мебель
+													</li>
+													<li class="list-group-item">
+														<span class="badge">444</span>
+														Подарки
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<h3>Стоимость</h3>
+											<input type="text" class="span2 slider" value="" data-slider-min="-20" data-slider-max="20" data-slider-step="1" data-slider-value="-14" data-slider-orientation="vertical" data-slider-selection="after"data-slider-tooltip="hide">
+										</li>
+                    <!--a href="index.html" class="list-group-item">Home</a>
                     <a href="about.html" class="list-group-item">About</a>
                     <a href="services.html" class="list-group-item">Services</a>
                     <a href="contact.html" class="list-group-item">Contact</a>
@@ -163,8 +192,8 @@
                     <a href="sidebar.html" class="list-group-item active">Sidebar Page</a>
                     <a href="faq.html" class="list-group-item">FAQ</a>
                     <a href="404.html" class="list-group-item">404</a>
-                    <a href="pricing.html" class="list-group-item">Pricing Table</a>
-                </div>
+                    <a href="pricing.html" class="list-group-item">Pricing Table</a-->
+                </ul>
             </div>
             <!-- Content Column -->
             <div class="col-md-9">
@@ -354,6 +383,7 @@
 		<script src="js/toucheffects.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-slider.js"></script>
 		<script type="text/javascript">
 			$("figure").click(function(e){
 				var src = $(this).find("img").attr("src");
@@ -365,6 +395,7 @@
 				$("#myModal").modal();
 						console.log(id);
 			}
+			$('.slider').slider();
 		</script>
 </body>
 
