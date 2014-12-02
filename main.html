@@ -150,9 +150,13 @@
             <div class="col-md-3">
 						<ul class="list-group">
 										<li class="list-group-item">
-											<h3 data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><a class="">Категории</a></h3>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											<h3 data-toggle="collapse" href="#collapseCat" aria-expanded="true" aria-controls="collapseOne"><a class="">Категории</a></h3>
+											<div id="collapseCat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 												<ul class="list-group">
+													<li class="list-group-item">
+														<span class="badge">796</span>
+														Все
+													</li>
 													<li class="list-group-item">
 														<span class="badge">184</span>
 														Одежда
@@ -173,8 +177,25 @@
 											</div>
 										</li>
 										<li class="list-group-item">
-											<h3>Стоимость</h3>
-											<input type="text" class="span2 slider" value="" data-slider-min="-20" data-slider-max="20" data-slider-step="1" data-slider-value="-14" data-slider-orientation="vertical" data-slider-selection="after"data-slider-tooltip="hide">
+											<h3 data-toggle="collapse" href="#collapseCost" ><a>Стоимость</a></h3>
+											<div id="collapseCost" class="panel-collapse collapse" >
+											<div class="row">
+												<div class="col-xs-5">
+													<input type="text" class="form-control" id="pFrom" placeholder="от">-
+												</div>
+												<div class="col-xs-1">
+													-
+												</div>
+												<div class="col-xs-5">
+													<input type="text" class="form-control" id="pTo" placeholder="до">
+												</div>
+											</div>
+											<!--b>€ 10</b> <input type="text" class="" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" id="sl2" > <b>€ 1000</b-->
+											<input type="text" class="text-center" value="" id="sl2" style="width: 230px;">
+											</div>
+										</li>
+										<li class="list-group-item">
+											<a href='#' class='btn btn-success' id='filter'>Подобрать</a>
 										</li>
                     <!--a href="index.html" class="list-group-item">Home</a>
                     <a href="about.html" class="list-group-item">About</a>
@@ -395,7 +416,17 @@
 				$("#myModal").modal();
 						console.log(id);
 			}
-			$('.slider').slider();
+			$('#sl2').slider({
+				min: 10,
+				max: 5000,
+				step: 10,
+				orientation: 'horizontal',
+				value: [10,5000],
+				tooltip: 'show',
+			}).on('slide', function(ev){
+						$('#pFrom').val(ev.value[0]);
+						$('#pTo').val(ev.value[1]);
+						});
 		</script>
 </body>
 

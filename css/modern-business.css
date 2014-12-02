@@ -85,6 +85,14 @@ header.carousel .fill {
     font-style: italic;
 }
 
+.list-group h3 {
+	margin-top: 5px;
+	cursor: pointer;	
+}
+
+#filter {
+	width: 100%;
+}
 /* Footer Styles */
 
 footer {
