@@ -138,3 +138,23 @@
 	opacity: 1;
 }
 
+.filter	{
+	float: left;
+	width: 58px;
+	height: 58px;
+	margin-right: 15px;
+	border: 1px solid #014c66;
+}
+.filter :hover {
+	cursor: pointer;
+}
+
+.filter i:first-child{
+	color: white;
+}
+
+#filter-menu {
+	height: 80px;
+	margin: 0 auto;
+}
+
