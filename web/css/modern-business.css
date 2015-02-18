@@ -36,6 +36,10 @@ header.carousel {
     height: 50%;
 }
 
+#smallcarousel {
+    height: 30%;
+}
+
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
@@ -120,4 +124,9 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+.filter-box p {
+	font-size: 16px;
+	font-weight: bold;
 }

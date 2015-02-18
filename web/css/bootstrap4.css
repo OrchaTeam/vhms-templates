@@ -3122,7 +3122,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #026689;
+  /*background-color: #026689;*/
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -3146,7 +3146,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #dad2bf;
+  /*color: #dad2bf;*/
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3175,6 +3175,9 @@ tbody.collapse.in {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
+}
+.dropdown-menu .badge {
+	margin-right: 10px;
 }
 .open > .dropdown-menu {
   display: block;

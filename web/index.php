@@ -2,6 +2,7 @@
 
 require('../vendor/autoload.php');
 
+include_once('main.html');
 $app = new Silex\Application();
 $app['debug'] = true;
 
