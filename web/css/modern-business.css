@@ -44,6 +44,13 @@ header.carousel {
 		background-size: cover;
 }
 
+#item-header {
+	height: 30%;
+	background: url(../img/HandmadeLogo.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
